@@ -1,0 +1,9 @@
+[submodule "src/parser/PdfParser"]
+	path = src/parser/PdfParser
+	url = git@github.com:HamsterNote/PdfParser.git
+[submodule "src/parser/DocumentParser"]
+	path = src/parser/DocumentParser
+	url = git@github.com:HamsterNote/DocumentParser.git
+[submodule "src/types/common"]
+	path = src/types/common
+	url = git@github.com:HamsterNote/types.git
