@@ -21,8 +21,9 @@
       "@DocumentParser": ["./src/parser/DocumentParser"],
       "@PdfParser": ["./src/parser/PdfParser"],
       "@math": ["./src/types/common/math"],
+      "@typesCommon/*": ["./src/types/common/*"]
     }
   },
   "include": ["src", "vite.config.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

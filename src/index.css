@@ -5,17 +5,46 @@
   --link: #61dafb;
 }
 
-* { box-sizing: border-box; }
-html, body, #root { height: 100%; }
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
 body {
   margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Noto Sans,
+    Ubuntu,
+    Cantarell,
+    Helvetica Neue,
+    Arial,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
   line-height: 1.5;
   background: var(--bg);
   color: var(--fg);
 }
 
-.app { max-width: 840px; margin: 48px auto; padding: 0 16px; }
-h1 { font-size: 28px; margin: 0 0 12px; }
-p { margin: 0 0 16px; }
-a { color: var(--link); }
+.app {
+  max-width: 840px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+h1 {
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+p {
+  margin: 0 0 16px;
+}
+a {
+  color: var(--link);
+}

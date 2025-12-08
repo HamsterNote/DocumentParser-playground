@@ -6,7 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview --port 6673"
+    "preview": "vite preview --port 6673",
+    "prettier": "prettier --config prettier.config.cjs .",
+    "prettier:write": "prettier --config prettier.config.cjs --write .",
+    "prettier:check": "prettier --config prettier.config.cjs --check .",
+    "predev": "prettier --config prettier.config.cjs --check . && eslint . --ext .js,.cjs,.mjs,.ts,.tsx --max-warnings=0",
+    "prebuild": "prettier --config prettier.config.cjs --check . && eslint . --ext .js,.cjs,.mjs,.ts,.tsx --max-warnings=0",
+    "lint": "eslint . --ext .js,.cjs,.mjs,.ts,.tsx --report-unused-disable-directives --max-warnings=0",
+    "lint:fix": "eslint . --ext .js,.cjs,.mjs,.ts,.tsx --fix"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -17,6 +24,16 @@
     "@types/node": "^20.11.30",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.3.3",
+    "prettier-config-standard": "^7.0.0",
     "typescript": "~5.6.2",
     "vite": "^5.4.8"
   },

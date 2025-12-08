@@ -1,0 +1,17 @@
+node_modules
+dist
+build
+coverage
+.turbo
+.next
+.history
+.vscode
+.idea
+.history
+.cache
+.eslintcache
+public
+.cursor
+*.cjs
+*.mjs
+.eslintignore

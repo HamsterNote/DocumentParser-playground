@@ -1,0 +1,25 @@
+---
+alwaysApply: true
+---
+
+### Project Intro (for AI tools)
+
+This repo is a Vite + React + TypeScript playground for HamsterNote's document parsing and rendering.
+
+Core concepts:
+- Common abstraction in `src/parser/DocumentParser`:
+  - `HamsterDocument` / `HamsterPage` interfaces
+  - `DocumentParser` base class and a registry with `registerParser()` and `parse(file)` by file extension
+- PDF implementation in `src/parser/PdfParser` using `pdfjs-dist`:
+  - `PdfParser` -> `PdfDocument` -> `PdfPage` (canvas rendering + optional TextLayer)
+  - OCR experiments via `tesseract.js` (logs only for now)
+- UI components:
+  - `HamsterDocumentComponent` iterates pages from `doc.getPages()`
+  - `HamsterPageComponent` lazy-renders `page.render(container, { scale, views })` with IntersectionObserver
+
+Runtime note:
+- pdf.js worker is loaded from `public/pdf.worker.mjs` via `document.baseURI` (see `src/main.tsx`).
+
+Vite aliases (see `vite.config.ts`): `@DocumentParser`, `@PdfParser`, `@src`, `@parser`, `@math`, `@typesCommon`.
+
+Scripts: `yarn dev` (port 6673), `yarn build`, `yarn preview` (6673). See README.md for full details.

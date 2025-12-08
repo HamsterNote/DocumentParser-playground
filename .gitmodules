@@ -7,3 +7,6 @@
 [submodule "src/types/common"]
 	path = src/types/common
 	url = git@github.com:HamsterNote/types.git
+[submodule "src/parser/pdf-rearranger"]
+	path = src/parser/pdf-rearranger
+	url = git@github.com:HamsterNote/pdf-rearranger.git
