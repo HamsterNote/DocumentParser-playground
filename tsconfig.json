@@ -20,6 +20,7 @@
       "@parser/*": ["./src/parser/*"],
       "@DocumentParser": ["./src/parser/DocumentParser"],
       "@PdfParser": ["./src/parser/PdfParser"],
+      "@HtmlParser": ["./src/parser/HtmlParser"],
       "@math": ["./src/types/common/math"],
       "@typesCommon/*": ["./src/types/common/*"]
     }

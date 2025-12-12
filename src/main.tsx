@@ -5,6 +5,7 @@ import './index.css'
 import { GlobalWorkerOptions } from 'pdfjs-dist'
 import { registerParser } from '@DocumentParser'
 import { PdfParser } from '@PdfParser'
+import { HtmlParser } from '@HtmlParser'
 
 // 设置 pdf.js 的 worker 文件路径
 // 要求：不能使用 import.meta.url，并且在 dev 与 production 环境都可用
@@ -14,6 +15,7 @@ const pdfWorkerUrl = new URL('pdf.worker.mjs', document.baseURI).toString()
 GlobalWorkerOptions.workerSrc = pdfWorkerUrl
 
 registerParser(PdfParser)
+registerParser(HtmlParser)
 
 const root = document.getElementById('root')
 if (!root) {

@@ -10,3 +10,6 @@
 [submodule "src/parser/pdf-rearranger"]
 	path = src/parser/pdf-rearranger
 	url = git@github.com:HamsterNote/pdf-rearranger.git
+[submodule "src/parser/HtmlParser"]
+	path = src/parser/HtmlParser
+	url = git@github.com:HamsterNote/HtmlParser.git

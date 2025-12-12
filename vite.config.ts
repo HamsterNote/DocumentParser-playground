@@ -18,6 +18,10 @@ export default defineConfig({
         replacement: path.resolve(__dirname, 'src/parser/PdfParser')
       },
       {
+        find: '@HtmlParser',
+        replacement: path.resolve(__dirname, 'src/parser/HtmlParser')
+      },
+      {
         find: '@math',
         replacement: path.resolve(__dirname, 'src/types/common/math')
       },
