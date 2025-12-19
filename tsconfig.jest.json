@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest", "vite/client", "react", "react-dom"],
+    "esModuleInterop": true
+  },
+  "include": [
+    "src",
+    "vite.config.ts",
+    "jest.setup.ts",
+    "**/__tests__/**/*.ts",
+    "**/__tests__/**/*.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}

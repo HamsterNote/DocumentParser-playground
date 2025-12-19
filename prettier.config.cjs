@@ -1,9 +1,2 @@
-// Root Prettier configuration that extends Standard config
-// See: https://github.com/standard/prettier-config-standard
-// This keeps project-specific overrides from the previous setup.
-const standard = require('prettier-config-standard');
-
-/** @type {import('prettier').Config} */
-module.exports = {
-  ...standard
-};
+// 引用 @system-ui-js/development-base 中的 Prettier 配置，保持多仓库一致性
+module.exports = require('@system-ui-js/development-base/prettier.config.cjs');
