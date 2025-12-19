@@ -12,6 +12,7 @@ export default function App() {
       if (res) {
         HtmlParser.decodeToHtml(res).then((html) => {
           const wrap = document.createElement('div')
+          wrap.style = 'height: 100vh;'
           wrap.innerHTML = html
           document.body.append(wrap)
         })
