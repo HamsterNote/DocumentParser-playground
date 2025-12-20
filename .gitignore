@@ -37,3 +37,6 @@ coverage/
 
 # ts 增量编译
 *.tsbuildinfo
+
+# AI工作进度
+plan/**
